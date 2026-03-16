@@ -11,7 +11,7 @@ from pathlib import Path
 st.markdown("## 📄 Document Search & Q&A")
 st.markdown(
     '<p style="color:#4a6080;margin-top:-10px;margin-bottom:24px;">'
-    'Upload your DOE IEP SOP PDFs and ask natural-language questions. '
+    'Upload your IEP SOP PDFs and ask natural-language questions. '
     'Results are cited with page numbers.</p>',
     unsafe_allow_html=True,
 )
