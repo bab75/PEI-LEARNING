@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# NYC DOE IEP Intelligence Platform — requirements.txt
+# Install: pip install -r requirements.txt
+# Run:     streamlit run IEPapp.py
+# Python:  3.9+
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Core framework ────────────────────────────────────────────────────────────
+streamlit>=1.32.0
+
+# ── Data processing ───────────────────────────────────────────────────────────
+pandas>=2.0.0
+numpy>=1.24.0
+
+# ── PDF parsing (choose one or install both — pdfplumber is tried first) ──────
+pdfplumber>=0.10.0          # Best for text-heavy PDFs with tables
+PyMuPDF>=1.23.0             # Faster; good fallback; also called "fitz"
+
+# ── Optional: semantic search upgrade (uncomment if you want vector search) ──
+# sentence-transformers>=2.6.0   # Local embeddings (no API key needed)
+# faiss-cpu>=1.7.4               # Vector similarity search
+# chromadb>=0.4.0                # Persistent vector store (alternative to FAISS)
+
+# ── Optional: OpenAI-powered RAG (uncomment + set OPENAI_API_KEY in .env) ────
+# openai>=1.10.0
+# tiktoken>=0.6.0                # Token counting for chunking
+# langchain>=0.1.0               # RAG orchestration
+# langchain-openai>=0.0.5
+
+# ── Export / reporting ────────────────────────────────────────────────────────
+openpyxl>=3.1.0             # Excel export for checklists
+reportlab>=4.0.0            # PDF export for checklists (optional)
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0        # Load API keys from .env file
+requests>=2.31.0            # HTTP requests (if fetching remote docs)
