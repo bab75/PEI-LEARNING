@@ -1,12 +1,12 @@
 """
-NYC DOE IEP Intelligence Platform
+ DOE IEP Intelligence Platform
 Entry point — run with: streamlit run IEPapp.py
 """
 
 import streamlit as st
 
 st.set_page_config(
-    page_title="NYC DOE · IEP Intelligence Platform",
+    page_title="DOE · IEP Intelligence Platform",
     page_icon="📋",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -216,7 +216,7 @@ with st.sidebar:
     <div style="padding:16px 4px 24px;">
         <div style="font-family:'IBM Plex Mono',monospace;font-size:0.65rem;
                     letter-spacing:0.12em;color:#5a7a9e;text-transform:uppercase;
-                    margin-bottom:4px;">NYC Department of Education</div>
+                    margin-bottom:4px;">Department of Education</div>
         <div style="font-size:1.1rem;font-weight:700;color:white;line-height:1.2;">
             IEP Intelligence<br>Platform
         </div>
@@ -234,7 +234,7 @@ with st.sidebar:
 st.markdown("""
 <div class="hero">
     <div style="position:relative;z-index:1;">
-        <span class="hero-badge">NYC DOE</span>
+        <span class="hero-badge">DOE</span>
         <span class="hero-badge" style="background:#2176ae;">SOP v2024</span>
         <div class="hero-title">IEP Intelligence Platform</div>
         <div class="hero-sub">
@@ -329,5 +329,5 @@ st.markdown("---")
 st.markdown("""
 <div style="text-align:center;color:#94a3b8;font-size:0.75rem;
             font-family:'IBM Plex Mono',monospace;letter-spacing:0.05em;padding:8px 0;">
-    NYC DOE · IEP Intelligence Platform · Built on public SOP documents · IDEA-aligned
+DOE · IEP Intelligence Platform · Built on public SOP documents · IDEA-aligned
 </div>""", unsafe_allow_html=True)
