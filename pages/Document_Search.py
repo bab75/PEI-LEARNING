@@ -11,7 +11,7 @@ from pathlib import Path
 st.markdown("## 📄 Document Search & Q&A")
 st.markdown(
     '<p style="color:#4a6080;margin-top:-10px;margin-bottom:24px;">'
-    'Upload your NYC DOE IEP SOP PDFs and ask natural-language questions. '
+    'Upload your DOE IEP SOP PDFs and ask natural-language questions. '
     'Results are cited with page numbers.</p>',
     unsafe_allow_html=True,
 )
@@ -118,7 +118,7 @@ with left:
     uploaded = st.file_uploader(
         "Drag & drop your IEP SOP PDF (up to 80 pages)",
         type=["pdf"],
-        help="Accepts any NYC DOE IEP SOP PDF. Text is extracted locally.",
+        help="Accepts any  DOE IEP SOP PDF. Text is extracted locally.",
     )
 
     if uploaded and uploaded.name != st.session_state.doc_name:
